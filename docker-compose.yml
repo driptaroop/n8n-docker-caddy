@@ -15,7 +15,7 @@ services:
     restart: always
     ports:
       - 5678:5678
-    container_name: n8n-main
+    container_name: n8n
     environment:
       - N8N_HOST=${SUBDOMAIN}.${DOMAIN_NAME}
       - N8N_PORT=5678
@@ -38,7 +38,7 @@ services:
       dockerfile: n8n-runners.Dockerfile
     container_name: n8n-runners
     environment:
-      - N8N_RUNNERS_TASK_BROKER_URI=http://n8n-main:5679
+      - N8N_RUNNERS_TASK_BROKER_URI=http://n8n:5679
       - N8N_RUNNERS_AUTH_TOKEN=${N8N_RUNNERS_AUTH_TOKEN}
     depends_on:
       - n8n
