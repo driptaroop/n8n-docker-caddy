@@ -48,7 +48,7 @@
 			],
 			"env-overrides": {
 				"N8N_RUNNERS_STDLIB_ALLOW": "*",
-				"N8N_RUNNERS_EXTERNAL_ALLOW": "numpy,pandas"
+				"N8N_RUNNERS_EXTERNAL_ALLOW": "numpy,pandas,newspaper4k,newspaper"
 			}
 		}
   ]
