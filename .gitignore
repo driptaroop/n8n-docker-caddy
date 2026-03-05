@@ -1,2 +1,3 @@
 .env
 caddy_config/Caddyfile
+certificates/*.crt
